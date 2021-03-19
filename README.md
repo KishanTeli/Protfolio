@@ -172,7 +172,20 @@ for the detected face, Total number of data deployed in model is 16158 from Goog
 • The f1 score achieved 0.99 and Loss was 0.0182
 </p>
                         </div>
+                        
                         <div class="flex-shrink-0"><span class="text-primary">August 2020 - January 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University Placement Analysis and Prediction (Exploratory Data Analysis, Machine Learning</h3>
+                            <div class="subheading mb-3">Stevens insitute of Technology</div>
+                            <p>• Utilized university's placement dataset to determine patterns by analyzing data of students who were plcaed <br>
+• Used statistical method to perform exploratory data analysis to find important factors that affect placement status of student <br>
+                                • Implemented Logistic Regression, Random Forest and Decision tree algorithms to predict whether student will be placed and determined which algorithm gives maximum accuracy
+</p>
+                        </div>
+                        
+                        <div class="flex-shrink-0"><span class="text-primary">April 2020 - July 2020</span></div>
                     </div>
                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
