@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>KishanTeli</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Kishan Teli</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Kishan.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#application">Python Application</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#rstudio">R studio project</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#facerecog">Facial Recognition</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#prediction">Prediction project</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Tableau Dashboard</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="application">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        PCA
+                        <span class="text-primary">Python</span>
+                        Application
+                    </h1>
+                    <div class="subheading mb-5">
+                        Principle Component Analysis
+                    </div>
+                    
+                    <p class="lead mb-5">Principle Component Analysis is a technique used to reduce the number of dimensions of your data. In the process you lose some accuracy but increase the simplicity of your data which can make it easier to use.
+</p>
+                    <p class="lead mb-5"><b>Steps</b><br>
+
+1. Scale your numerical variables<br>
+2. Center all of your points around the origin<br>
+3. Find the line of best fit that goes through the origin but also maximizes the distance from your points projected points on the line, and the origin.<br>
+4. This is your first Principle Component and the slope of this line will tell you how important each variable is<br>
+    &nbsp&nbsp&nbsp&nbsp - Create a vector along this line of length 1, this is the Eigenvector<br>
+    &nbsp&nbsp&nbsp&nbsp - The sum of squares of the Eigenvector is the Eigenvalue<br>
+    &nbsp&nbsp&nbsp&nbsp - The amounts each variable contribute to the slope of the Eigenvalue are the Loading Scores<br>
+                        5. Repeat this process creating as many Principle Components as there are variables which each Principle Component being perpendicular to the existing ones<br></p>
+
+ 
+                    <p class="lead mb-5"><b>Output Screenshots</b><br><br>
+                        1. Uploading file for PCA Analysis<br><br>
+                        <img src="assets/img/PCA/first_view.png" alt="Uploading File" width="100%" height="100%"/><br><br>
+                        2. Generated Graph from the uploaded file <br><br>
+                        <img src="assets/img/PCA/graph_view.png" alt="graph File" width="100%" height="100%"/>
+                        
+</p>
+                    <p class="lead mb-5"><b>Settings of Application </b><br><br>
+                        1. You can change variable parameters by changing<br><br>
+                        <img src="assets/img/PCA/variable.png" alt="variable File" /><br><br>
+                        2. You can change PCA parameters by changing <br><br>
+                        <img src="assets/img/PCA/pca.png" alt="Pca File" />
+                        
+</p>
+                    <div class="social-icons">
+<!--                        <a class="social-icon" href="https://www.linkedin.com/in/iwanttobeunique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>-->
+                        <a class="social-icon" title="Github Repo" href="https://github.com/KishanTeli/pca_python_application" target="_blank"><i class="fab fa-github"></i></a> 
+                        <!--<<a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>-->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Facial Recognition-->
+            <section class="resume-section" id="facerecog">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Facial Recognition using
+                        <span class="text-primary">Deep Learning</span>
+                    </h1>
+                    <br>
+                    <p class="lead mb-5"><b>Introduction</b><br>In today’s world, face recognition has become an integral part of our lives. We use face recognition feature for multi-purposes in our latest gadgets such as FaceID, etc. In this project, we will implement face recognition technique using deep learning concepts. Our aim is to recognize people from the given dataset such as photos or videos. The name of that person will be displayed on the photo or video being displayed. We will accomplish this through four important phases: face detection, posing and projecting faces, encoding (recognizing) faces through basic facial measurements and finding person’s name from encoding. We will use deep convolutional neural networks for encoding faces and also linear support vector machine (SVM) classifier for getting the information about the name of the person and displaying it. We also want to map a person’s face, even when the whole face (50%) is not displayed in the dataset. Thereby, predicting a face and identifying it. In this way, we can identify a person when he/she has worn a face mask, especially in current times of COVID-19 pandemic. We can use this feature in many gadgets and applications for authentication and medical purposes.
+
+</p>
+                    <p class="lead mb-5"><b>Problem Description</b><br>
+                        Face recognition involves many complex tasks that needs to be divided into stages. We are not just going to recognize faces from a given photo or a live video stream, we will also predict a person's face , when only half of it is given to the system as the data. And then, we will match the predicted face with our database, in order to recognize the face and identify it. Thus, there are four main stages by which we can achieve face recognition using deep learning. Face detection is the first basic stage wherein, we generate histogram of oriented gradients (HOG) representation of the image and then, we find the part of this image that matches or is similar to the HOG pattern extracted from a number of other training faces. In the next stage, i.e., posing and projecting faces – we need to detect faces from images having different poses of the same person. Hence, in this, we will use face landmark estimation algorithm. In this, we will train machine learning algorithm to find 68 specific points on any face, to solve this issue. The third stage, which is the most critical stage, is encoding faces. In this, we will use a number of measurements unique to a person’s face, which will help us identify a face. We use deep convolutional neural network (CNN) for this. Thus, we will be able to identify a person’s face. We will also do all these above tasks manually first, and then will train the machine later. We will also map the facial points of half of the face to the predicted facial points of the other half of the face. After the mapping is successfully done, we then use it to identify the person in the third stage. The last stage is the easiest stage, in which we need to find the name of the person/face that we identified from the database and display it. We use linear SVM model classifier for this. We need to run this classifier on our photo or video, to get the output, i.e, the name of the face of the person identified in the video or image. These combined tasks, enable us to recognize faces of people with high precision.</p>
+                    <p class="lead mb-5"><b>Outputs</b>
+                        Facial Detected Images who wear mask<br>
+                        <img src="assets/img/facial/test_img1.png" alt="photos" />
+                        <img src="assets/img/facial/test_img2.png" alt="photos" />
+                        <img src="assets/img/facial/test_img3.png" alt="photos" />
+                        <img src="assets/img/facial/test_img4.png" alt="photos" />
+                        <img src="assets/img/facial/test_img5.png" alt="photos" />
+                        <img src="assets/img/facial/test_img6.png" alt="photos" />
+                    </p>
+ 
+                    <p class="lead mb-5"><b>Visit project site for detail information by clicking the icon below</b></p>
+                    <div class="social-icons">
+<!--                        <a class="social-icon" href="https://www.linkedin.com/in/iwanttobeunique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>-->
+                        <a class="social-icon" title="Site" href="https://sites.google.com/view/facerecognition-kr" target="_blank"><i class="fab fa-blogger"></i></a>
+                        <a class="social-icon" title="Report" href="https://drive.google.com/file/d/1WOgrHNfi_W8-rNS5XDeVFcSBlvHHs2wI/view?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i></a>
+                        <!--<<a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>-->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- House Prediction Project-->
+            <section class="resume-section" id="prediction">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        House Market
+                        <span class="text-primary">Prediction</span>
+                    </h1>
+                    <br>
+                    <p class="lead mb-5"><b>Abstract</b><br>In this project, a machine learning model is proposed to predict the price of house based on the data related to house. This project can help buyer to predict the actual price of the house according to the area, facilities and utilities that include in the house. We are using some regression techniques to 
+reach the goal of the project and including every single step and output to state the project progress. We are using Python programming language with some Python libraries like numpy, sklearn, seaborne, etc. To build machine learning models we need to clean data and able to predict the price of house based on house features in order to analyze and compare model performance to choose the best model that can give accurate result.
+
+</p>
+                    <p class="lead mb-5"><b>Introduction</b><br>
+                        Everyday thousands of houses are sold, and every buyer have questions like : What is the actual price of the house that I am gone buy? Am I paying a good price? Price of house is depending on size of the house, the year it was built in, location, etc. For the prediction we need to look some statistical data and try to figure out which model will give us an accurate result to predict price. For that we need to study some models and select one of the models for our project to get the perfect result to reach the goal of this project. <br>To, accomplish, we have pulled the dataset from the Kaggle
+                    </p>
+                    <p class="lead mb-5"><b>Tools Used</b><br>
+                        • Sklearn<br>
+• Numpy<br>
+• Matplotlib<br>
+• Pandas<br>
+• Jupyter Notebook<br>
+• Kaggle<br>
+• Seaborn<br>
+                    </p>
+                    <p class="lead mb-5"><b>Common Features found </b><br>
+                        Which features are among the most important features for both XGBoost and Random Forest models and find out the difference in their importance regarding the two models:<br>
+                        <img src="assets/img/HousePrediction/feature.png" alt="Features" />
+                    </p>
+                    <p class="lead mb-5"><b>Visit project report for detail information by clicking the icon below</b></p>
+                    <div class="social-icons">
+<!--                        <a class="social-icon" href="https://www.linkedin.com/in/iwanttobeunique/" target="_blank"><i class="fab fa-linkedin-in"></i></a>-->
+                        <a class="social-icon"  title="Github Repo" href="https://github.com/KishanTeli/Housing-Market-Prediction" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" title="Report" href="https://drive.google.com/file/d/1_7UB90pyzqJANrLk8tu5GtWilNOVfjTp/view?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i></a> 
+                        <!--<<a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>-->
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        </div>
+    </body>
+</html>
